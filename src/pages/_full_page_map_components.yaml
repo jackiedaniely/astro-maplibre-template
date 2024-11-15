@@ -1,32 +1,33 @@
-- id: 'bikes'
-  label: 'Bike Lanes'
+- id: 'roads'
+  label: 'Roads'
   toggle: true  
-  visible: false
-  data-type: 'geojson'
-  layer-type: 'line'
-  url: 'https://data.cityofnewyork.us/resource/mzxg-pwib.geojson?$limit=10000'
-  paint:
-    line-color: '#000000'
-    line-width: 3
-
-- id: 'pizza'
-  label: 'Pizza Places'
-  toggle: true
   visible: true
   data-type: 'geojson'
-  layer-type: 'circle'
-  url: 'https://data.cityofnewyork.us/resource/43nn-pn8j.geojson?cuisine_description=Pizza&$limit=10000'
+  layer-type: 'line'
+  url: 'https://raw.githubusercontent.com/jackiedaniely/lachin-corridor/refs/heads/main/lachin.geojson'
   paint:
-    circle-color: '#ff0000'
-    circle-radius: 5
-  mouseEvent:
-    - type: "click"
-      content:
-        - h1:
-            - str: "Feature Info"
-        - p:
-            - str: "Description"
-        - p:
-            - str: "Name: "
-            - property: "dba"
-              else: "N/A"
+    line-color: '#000000'
+    line-width: 1
+
+- id: 'Azerbaijan 2023'
+  label: 'Azerbaijan 2023'
+  toggle: true  
+  visible: true
+  data-type: 'geojson'
+  layer-type: 'line'
+  url: 'https://raw.githubusercontent.com/jackiedaniely/lachin-corridor/refs/heads/main/azerbaijan.geojson'
+  paint:
+    line-color: '#000000'
+    line-width: 1
+    
+- id: 'Artsakh 2020'
+  label: 'Artsakh 2020'
+  toggle: true  
+  visible: true
+  data-type: 'geojson'
+  layer-type: 'line'
+  url: 'https://raw.githubusercontent.com/jackiedaniely/lachin-corridor/refs/heads/main/Artsakh%202020.geojson'
+  paint:
+    line-color: '#000000'
+    line-width: 1
+
