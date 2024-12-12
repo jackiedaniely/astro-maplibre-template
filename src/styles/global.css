@@ -4,8 +4,8 @@
 
 /* Base styles */
 :root {
-  --bg-color: rgba(255, 255, 255, 0.9); /* Light mode */
-  --text-color: #ffffff; /* Darker text for light mode */
+  --bg-color: rgba(255, 255, 255, 0.9); /* dark mode */
+  --text-color: #ffffff; /* Darker text for dark mode */
 }
 
 /* Dark mode */
@@ -18,10 +18,10 @@
 
 html {
   overflow-y: scroll;
-  color-scheme: light;
+  color-scheme: dark;
 }
 
-html.dark {
+html.light {
   color-scheme: dark;
 }
 
@@ -33,7 +33,7 @@ body {
 body {
   @apply font-sans antialiased;
   @apply flex flex-col;
-  @apply bg-black dark:bg-gray-900;
+  @apply bg-black dark:bg-black;
   @apply text-white/100 dark:text-white/75;
 }
 
