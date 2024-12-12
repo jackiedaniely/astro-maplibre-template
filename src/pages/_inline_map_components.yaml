@@ -60,7 +60,7 @@ blocks:
 
   - type: "map"
     content:
-      container: "maplibremap2"
+      container: "plibremap2"
       latitude: 39.64155979365367
       longitude: 46.56530268169134
       center: 0,0
@@ -138,7 +138,7 @@ blocks:
       - h1: 
         - str: 
       - img:
-        - src: "../fragments1.png"
+        - src: "../img/fragments1.png"
           alt: "image description"
 
   - type: "content"
