@@ -92,7 +92,7 @@ blocks:
       - h1: 
         - str: 
       - img:
-        - src: "./img/Lachin.png"
+        - src: "../img/Lachin.png"
           alt: "image description"
 
 
@@ -128,7 +128,7 @@ blocks:
                 - h6:
                   - str: 
                 - img:
-                  - src: "./img/khachkars.png"
+                  - src: "../img/khachkars.png"
                     alt: "Feature image"
           toggle: true
           visible: true
@@ -138,7 +138,7 @@ blocks:
       - h1: 
         - str: 
       - img:
-        - src: "/astro-maplibre-template/fragments1.png"
+        - src: "../fragments1.png"
           alt: "image description"
 
   - type: "content"
@@ -159,7 +159,7 @@ blocks:
       - p: 
         - str: "Historic Artsakh City Names. "
       - img:
-        - src: "./img/artsakh.png"
+        - src: "../img/artsakh.png"
           alt: "image description"
 
   - type: "content"
