@@ -5,14 +5,14 @@
 /* Base styles */
 :root {
   --bg-color: rgba(255, 255, 255, 0.9); /* Light mode */
-  --text-color: #333; /* Darker text for light mode */
+  --text-color: #ffffff; /* Darker text for light mode */
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: rgba(40, 40, 40, 0.9); /* Dark background */
-    --text-color: #eee; /* Lighter text for dark mode */
+    --bg-color: rgba(255, 255, 255, 0.9); /* Dark background */
+    --text-color: #ffffff; /* Lighter text for dark mode */
   }
 }
 
@@ -33,14 +33,14 @@ body {
 body {
   @apply font-sans antialiased;
   @apply flex flex-col;
-  @apply bg-stone-100 dark:bg-stone-900;
-  @apply text-black/50 dark:text-white/75;
+  @apply bg-black dark:bg-gray-900;
+  @apply text-white/100 dark:text-white/75;
 }
 
 header {
   @apply fixed top-0 left-0 right-0 z-50 py-5;
-  @apply bg-stone-100/75 dark:bg-stone-900/25;
-  @apply backdrop-blur-sm saturate-200;
+  font-family: "Courier", normal;
+
 }
 
 main {
@@ -49,12 +49,13 @@ main {
 
 footer {
   @apply py-5 text-sm;
+  font-family: "Courier", normal;
 }
 
 article {
   @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
   @apply prose-headings:font-semibold prose-p:font-serif;
-  @apply prose-headings:text-black prose-headings:dark:text-white;
+  @apply prose-headings:text-white prose-headings:dark:text-white;
 }
 
 @layer utilities {
@@ -64,8 +65,8 @@ article {
     @apply transition-colors duration-300 ease-in-out;
   }
   article a:hover {
-    @apply text-black dark:text-white;
-    @apply decoration-black/25 dark:decoration-white/50;
+    @apply text-white dark:text-white;
+    @apply decoration-gray-900/25 dark:decoration-white/50;
   }
 }
 
@@ -90,16 +91,28 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+p1,
+p
+{
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 	line-height: initial;
-	font-family: "Inter", normal;
+	font-family: "Courier", normal;
+}
+
+h6,
+p7,
+p8,
+p9
+{
+	font-family: "Courier", normal;
+  color: black
 }
 
 h1 {
-	font-size: 2em;
-	font-weight: 700;
+	font-size: 1.6em;
+	font-weight: 600;
 }
 
 h2 {
@@ -167,11 +180,13 @@ section {
 }
 
 .maplibregl-popup-content {
-  color: var(--text-color); 
+  background-color: black;
+  color: var(--text-color)
 }
 
 #maplibre-scrollytelling-map {
-  position:fixed 
+  position:fixed;
+  background-color: black;
 }
 
 .hidden {
@@ -206,7 +221,7 @@ section {
 .step div {
   padding:  25px 50px;
   line-height: 25px;
-  font-size: 13px;
+  font-size: 13px; 
 }
 
 .step-content { 
@@ -220,7 +235,7 @@ section {
 
 
 .menu {
-  background: #fff;
+  background: #000000;
   position: absolute;
   z-index: 1;
   top: 10px;
@@ -228,11 +243,12 @@ section {
   border-radius: 3px;
   width: 120px;
   border: 1px solid rgba(0, 0, 0, 0.4);
+  font-family: "Courier", normal;
 }
 
 .menu a {
   font-size: 13px;
-  color: #404040;
+  color: #554646;
   display: block;
   margin: 0;
   padding: 0;
@@ -244,16 +260,19 @@ section {
 
 .menu a:last-child {
   border: none;
+  font-family: "Courier", normal;
 }
 
 .menu a:hover {
-  background-color: #f8f8f8;
-  color: #404040;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-family: "Courier", normal;
 }
 
 .menu a.active {
   background-color: black;
   color: #ffffff;
+  font-family: "Courier", normal;
 }
 
 .menu a.active:hover {
