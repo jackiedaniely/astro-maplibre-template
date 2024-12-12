@@ -138,7 +138,7 @@ blocks:
       - h1: 
         - str: 
       - img:
-        - src: "./img/fragments1.png"
+        - src: "./img/fragments.jpg"
           alt: "image description"
 
   - type: "content"
