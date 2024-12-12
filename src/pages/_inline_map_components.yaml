@@ -127,8 +127,6 @@ blocks:
               content:
                 - h6:
                   - str: 
-                - p8:
-                  - str:
                 - img:
                   - src: "./img/khachkars.png"
                     alt: "Feature image"
