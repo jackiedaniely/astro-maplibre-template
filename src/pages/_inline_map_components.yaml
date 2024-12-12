@@ -138,9 +138,8 @@ blocks:
       - h1: 
         - str: 
       - img:
-        - src: "public/img/fragments1.png"
+        - src: "/astro-maplibre-template/fragments1.png"
           alt: "image description"
-          url: 'https://raw.githubusercontent.com/jackiedaniely/astro-maplibre-template/blob/main/public/img/fragments1.png'
 
   - type: "content"
     content:
